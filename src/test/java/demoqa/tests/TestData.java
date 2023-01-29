@@ -5,10 +5,14 @@ import com.github.javafaker.Faker;
 import java.util.Locale;
 import java.util.Random;
 
+
 public class TestData {
     static Faker faker = new Faker(new Locale("it"));
+
     static String userName = faker.name().firstName();
+
     static String lastName = faker.name().lastName();
+
     static String userEmail = faker.internet().emailAddress();
     static String genderWrapper = inputGenderUser();
     static String userPhoneNumber = faker.phoneNumber().subscriberNumber(10);
